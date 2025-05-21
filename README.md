@@ -24,7 +24,7 @@ The goal is to align sequences in a way that optimizes an alignment score, which
 
 ### 1. Dynamic Programming Approach (Needleman-Wunsch)
 
-The `dynamic_programming.cpp` file implements the classic Needleman-Wunsch algorithm, which:
+The `GSA_dynamic_programming.cpp` file implements the classic Needleman-Wunsch algorithm, which:
 
 - Uses a dynamic programming matrix to store alignment scores
 - Ensures optimal alignment by considering all possible alignments
@@ -44,7 +44,7 @@ The `dynamic_programming.cpp` file implements the classic Needleman-Wunsch algor
 
 ### 2. Divide and Conquer Approach (Hirschberg's Algorithm)
 
-The `divide_and_conquer.cpp` file implements Hirschberg's space-efficient algorithm, which:
+The `GSA_divide_and_conquer.cpp` file implements Hirschberg's space-efficient algorithm, which:
 
 - Reduces space complexity to O(m+n) while maintaining O(mn) time complexity
 - Uses a divide-and-conquer strategy to break down the problem
@@ -77,7 +77,7 @@ The `divide_and_conquer.cpp` file implements Hirschberg's space-efficient algori
 
 ```sh
 # Compile the code
-g++ dynamic_programming.cpp -o dynamic_programming
+g++ GSA_dynamic_programming.cpp -o dynamic_programming
 
 # Run the executable
 ./dynamic_programming
@@ -87,7 +87,7 @@ g++ dynamic_programming.cpp -o dynamic_programming
 
 ```sh
 # Compile the code
-g++ divide_and_conquer.cpp -o divide_and_conquer
+g++ GSA_divide_and_conquer.cpp -o divide_and_conquer
 
 # Run the executable
 ./divide_and_conquer
@@ -194,14 +194,6 @@ Both implementations use:
 
 - `EmptyCost`: The penalty for inserting a gap (default: 1)
 - `MatchCost`: The penalty for a mismatch (default: 2)
-
-## Contributors
-
-This project was developed by:
-- PRANAV G (CB.EN.U4AIE22016)
-- GANESH SUNDHAR S (CB.EN.U4AIE22017)
-- SIRI REDDY (CB.EN.U4AIE22019)
-- HARI KRISHNAN N (CB.EN.U4AIE22020)
 
 ## License
 
